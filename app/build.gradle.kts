@@ -4,6 +4,8 @@ plugins {
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
     id("kotlin-parcelize")
+    // 👇 এই নতুন প্লাগিনটি যুক্ত করা হয়েছে (Kotlin 2.0 এর জন্য বাধ্যতামূলক)
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -22,6 +24,8 @@ android {
             useSupportLibrary = true
         }
 
+        // ⚠️ WARNING: নিরাপত্তার স্বার্থে API KEY এখানে সরাসরি না রাখাই ভালো।
+        // আপাতত বিল্ড ঠিক করার জন্য রাখলাম, কিন্তু পরে এটি GitHub Secrets ব্যবহার করে সরাবেন।
         buildConfigField("String", "GEMINI_API_KEY", "\"AIzaSyClB3oy5L_gkjJI0s6_ky12QjDBrnPcCmY\"")
     }
 
@@ -54,9 +58,10 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
-    }
+    // 👇 এই ব্লকটি Kotlin 2.0 তে আর লাগে না, তাই মুছে ফেলা হয়েছে
+    // composeOptions {
+    //    kotlinCompilerExtensionVersion = "1.5.8"
+    // }
 
     packaging {
         resources {
@@ -114,7 +119,6 @@ dependencies {
     implementation("com.android.billingclient:billing-ktx:6.1.0")
 
     // PDF Generation & Viewing
-    // iText7 core and layout for Bangla Unicode support
     implementation("com.itextpdf:itext7-core:7.2.5")
     implementation("com.itextpdf:font-asian:7.2.5") 
     
