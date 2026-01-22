@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Identity -->
+    <string name="app_name">IT PDF</string>
+    <string name="app_tagline">Your smart document assistant</string>
+
+    <!-- Navigation Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Home Screen -->
+    <string name="home_img_to_pdf">Image to PDF</string>
+    <string name="home_img_to_pdf_desc">Convert Photos Instantly</string>
+    <string name="home_cv_ai">Create CV with AI</string>
+    <string name="home_cv_ai_desc">Write &amp; Design Resume [NEW!]</string>
+    <string name="recent_files">Recent Files</string>
+    <string name="see_all">See All &gt;</string>
+    <string name="empty_recent_files">No recent files found</string>
+
+    <!-- Tools Screen - Categories -->
+    <string name="section_popular">POPULAR (বহুল ব্যবহৃত)</string>
+    <string name="section_convert">CONVERT (কনভার্টার)</string>
+    <string name="section_security">SECURITY (নিরাপত্তা)</string>
+    <string name="section_edit">EDIT (এডিটিং)</string>
+
+    <!-- Tools Screen - Items -->
+    <string name="tool_merge">Merge PDF</string>
+    <string name="tool_merge_desc">(Join multiple)</string>
+    <string name="tool_split">Split PDF</string>
+    <string name="tool_split_desc">(Extract pages)</string>
+    <string name="tool_compress">Compress PDF</string>
+    <string name="tool_compress_desc">(Reduce size)</string>
+    <string name="tool_text_to_pdf">Text to PDF</string>
+    <string name="tool_web_to_pdf">Web to PDF</string>
+    <string name="tool_lock">Lock PDF</string>
+    <string name="tool_unlock">Unlock PDF</string>
+    <string name="tool_rotate">Rotate</string>
+    <string name="tool_delete_page">Delete Page</string>
+    <string name="search_tools_hint">Search tools...</string>
+    <string name="filter">FILTER</string>
+
+    <!-- AI Generator & Editor -->
+    <string name="ask_ai">Ask AI</string>
+    <string name="ai_generating">Gemini is thinking...</string>
+    <string name="ai_improve_text">Improve Text</string>
+    <string name="ai_make_professional">Make Professional</string>
+    <string name="ai_translate">Translate</string>
+    <string name="ai_cv_style">Convert to CV Style</string>
+    <string name="ai_privacy_notice">AI processing is done via Gemini API. Your content is only sent when you click a button.</string>
+    <string name="ai_error_limit">Rate limit reached. Please try again in a moment.</string>
+    <string name="ai_error_generic">AI Service is temporarily unavailable.</string>
+    
+    <!-- Editor Controls -->
+    <string name="btn_save">SAVE</string>
+    <string name="btn_undo">Undo</string>
+    <string name="btn_redo">Redo</string>
+    <string name="edit_text_color">Color</string>
+    <string name="edit_font_size">Size</string>
+    <string name="edit_image">Image</string>
+    <string name="edit_font">Font</string>
+    <string name="edit_alignment">Alignment</string>
+    <string name="edit_bg_color">Background</string>
+    <string name="edit_layer_order">Z-Index</string>
+    <string name="canvas_empty_state">Tap [+] to add text or images</string>
+    <string name="selected_item_format">SELECTED: %1$s</string>
+    <string name="zoom_hint">Pinch to Zoom Supported</string>
+
+    <!-- CV Builder Wizard -->
+    <string name="cv_wizard_title">CV Builder</string>
+    <string name="cv_personal_info">Personal Info</string>
+    <string name="cv_objective">Career Objective</string>
+    <string name="cv_education">Education</string>
+    <string name="cv_skills">Skills</string>
+    <string name="cv_experience">Experience</string>
+    <string name="cv_projects">Projects</string>
+    <string name="cv_template_simple">Simple</string>
+    <string name="cv_template_modern">Modern</string>
+    <string name="cv_template_professional">Professional</string>
+    <string name="cv_template_bangla">Bangla CV</string>
+    <string name="cv_ai_suggest">AI Suggestion</string>
+
+    <!-- File Management -->
+    <string name="my_files">My Files</string>
+    <string name="storage_used">Storage Used: %1$s MB</string>
+    <string name="files_count_format">%1$d Files</string>
+    <string name="filter_all">All</string>
+    <string name="filter_cvs">CVs</string>
+    <string name="filter_scanned">Scanned</string>
+    <string name="filter_edited">Edited</string>
+    <string name="date_today">TODAY (আজ)</string>
+    <string name="date_yesterday">YESTERDAY (গতকাল)</string>
+    <string name="date_last_week">LAST WEEK (গত সপ্তাহ)</string>
+    <string name="delete_confirm_title">Delete File?</string>
+    <string name="delete_confirm_msg">Are you sure you want to permanently delete this PDF?</string>
+    <string name="page_count_format">Page %1$d of %2$d</string>
+
+    <!-- PDF Success Screen -->
+    <string name="pdf_success">PDF Created Successfully!</string>
+    <string name="pdf_saved_path">File: %1$s</string>
+    <string name="btn_open">OPEN</string>
+    <string name="btn_share">SHARE</string>
+    <string name="btn_back_home">Back Home</string>
+
+    <!-- Settings & Profile -->
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="pro_version">👑 PRO VERSION</string>
+    <string name="pro_desc">Remove Ads &amp; Unlimited AI</string>
+    <string name="upgrade_now">Upgrade Now - ৳ 250</string>
+    <string name="my_details">MY DETAILS (CV Auto-fill)</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="app_settings">⚙️ APP SETTINGS (সেটিংস)</string>
+    <string name="language">Language</string>
+    <string name="language_selected">English / বাংলা</string>
+    <string name="img_quality">Image Quality</string>
+    <string name="quality_high">High (Default)</string>
+    <string name="save_path">Default Save Path</string>
+    <string name="save_path_val">/Internal/IT_PDF/</string>
+    <string name="support">ℹ️ SUPPORT</string>
+    <string name="rate_us">Rate Us (5 Stars)</string>
+    <string name="contact_dev">Contact Developer</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="version_info">Version 1.0.0 (Beta)</string>
+
+    <!-- About Developer -->
+    <string name="about_dev">About Developer</string>
+    <string name="dev_name">Md. Ishtiak Ahmed Robin</string>
+    <string name="dev_title">App Developer &amp; IT Support</string>
+    <string name="dev_bio">\"Passionate about creating smart tools to make your digital life easier. Student of Computer Science.\"</string>
+    <string name="connect_with_me">CONNECT WITH ME</string>
+    <string name="dev_website">Website / Portfolio</string>
+    <string name="dev_facebook">Facebook (Follow)</string>
+    <string name="dev_linkedin">LinkedIn</string>
+    <string name="dev_email">Email Me</string>
+    <string name="other_projects">MY OTHER PROJECTS</string>
+    <string name="dev_game">Game Dev</string>
+    <string name="dev_web">Web Dev</string>
+    <string name="made_in_bd">Designed &amp; Developed in Bangladesh 🇧🇩</string>
+    <string name="copyright">© 2026 IT PDF Team</string>
+
+    <!-- Page Arrangement -->
+    <string name="arrange_pages">Arrange Pages (%1$d)</string>
+    <string name="add_more">Add More</string>
+    <string name="page_number">Page %1$d</string>
+    <string name="convert_to_pdf_btn">CONVERT TO PDF (🚀)</string>
+
+    <!-- Common Actions / Status -->
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading...</string>
+    <string name="success">Success</string>
+    <string name="permission_denied">Permission required to access storage.</string>
+    <string name="no_internet">Please check your internet connection.</string>
+</resources>

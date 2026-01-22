@@ -1,0 +1,41 @@
+plugins {
+    // Android Gradle Plugin - Latest stable for high performance and Build Analyzer support
+    id("com.android.application") version "8.7.2" apply false
+    id("com.android.library") version "8.7.2" apply false
+
+    // Kotlin - Using 2.0.21 for the bundled Compose Compiler and improved K2 performance
+    id("org.jetbrains.kotlin.android") version "2.0.21" apply false
+    
+    // Jetpack Compose Compiler Plugin (Required for Kotlin 2.0+)
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21" apply false
+
+    // Hilt - Dependency Injection for Clean Architecture
+    id("com.google.dagger.hilt.android") version "2.52" apply false
+
+    // KSP (Kotlin Symbol Processing) - Essential for Hilt and Room performance
+    id("com.google.devtools.ksp") version "2.0.21-1.0.25" apply false
+
+    // Google Services - Required for AdMob integration
+    id("com.google.gms.google-services") version "4.4.2" apply false
+}
+
+/**
+ * Custom task to clean the build directory using the modern API.
+ * Ensures a fresh state across the multi-module Clean Architecture setup.
+ */
+tasks.register<Delete>("clean") {
+    delete(rootProject.layout.buildDirectory)
+}
+
+/**
+ * Global variables for versioning.
+ * Note: It is recommended to also maintain these in gradle/libs.versions.toml
+ * for better dependency management in professional-grade projects.
+ */
+extra.apply {
+    set("minSdkVersion", 26)    // Android 8.0 (Oreo) - Required for modern PDF features
+    set("targetSdkVersion", 35) // Target Android 15
+    set("compileSdkVersion", 35)
+    set("versionCode", 1)
+    set("versionName", "1.0.0")
+}
