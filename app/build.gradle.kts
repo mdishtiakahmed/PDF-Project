@@ -123,8 +123,7 @@ dependencies {
     implementation("com.itextpdf:font-asian:7.2.5") 
     
     // Modern Android PDF Viewer
-    implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
-
+    implementation("com.github.barteksc:android-pdf-viewer:2.8.2")
     // Image Loading - Coil
     implementation("io.coil-kt:coil-compose:2.5.0")
 
