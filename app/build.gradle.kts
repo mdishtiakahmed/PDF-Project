@@ -4,7 +4,6 @@ plugins {
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
     id("kotlin-parcelize")
-    // 👇 এই নতুন প্লাগিনটি যুক্ত করা হয়েছে (Kotlin 2.0 এর জন্য বাধ্যতামূলক)
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
@@ -24,9 +23,15 @@ android {
             useSupportLibrary = true
         }
 
-        // ⚠️ WARNING: নিরাপত্তার স্বার্থে API KEY এখানে সরাসরি না রাখাই ভালো।
-        // আপাতত বিল্ড ঠিক করার জন্য রাখলাম, কিন্তু পরে এটি GitHub Secrets ব্যবহার করে সরাবেন।
         buildConfigField("String", "GEMINI_API_KEY", "\"AIzaSyClB3oy5L_gkjJI0s6_ky12QjDBrnPcCmY\"")
+    }
+
+    // 👇 এই নতুন অংশটি খুবই গুরুত্বপূর্ণ!
+    // এটি গ্রেডলকে বলে দিচ্ছে যে আপনার রিসোর্স ফাইলগুলো 'src/main/res' এ নেই, বরং সরাসরি 'res' ফোল্ডারে আছে।
+    sourceSets {
+        getByName("main") {
+            res.srcDirs("res")
+        }
     }
 
     buildTypes {
@@ -57,11 +62,6 @@ android {
         compose = true
         buildConfig = true
     }
-
-    // 👇 এই ব্লকটি Kotlin 2.0 তে আর লাগে না, তাই মুছে ফেলা হয়েছে
-    // composeOptions {
-    //    kotlinCompilerExtensionVersion = "1.5.8"
-    // }
 
     packaging {
         resources {
@@ -122,8 +122,9 @@ dependencies {
     implementation("com.itextpdf:itext7-core:7.2.5")
     implementation("com.itextpdf:font-asian:7.2.5") 
     
-    // Modern Android PDF Viewer
+    // Modern Android PDF Viewer (Updated to mhiew fork)
     implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3")
+
     // Image Loading - Coil
     implementation("io.coil-kt:coil-compose:2.5.0")
 
